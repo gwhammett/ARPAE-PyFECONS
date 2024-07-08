@@ -7,7 +7,7 @@ This Github contains a folder for each base case, and one for the benchmark case
 4. Become a Github collaborator and generate a PAT (ensure it has 'repo' access).
 5. Input PAT into first cell of code.
 6. Enter inputs in the code MFE/MFE/PyCosting_ARPA_E_MFE.ipynb on colab, and run all cells. This will overwrite all of the files in the 'Modified' subdirectory, by substituting values for variables in the 'Original' template *.tex files.  It will then push the results (the new versions in the 'Modified' subdirectory) back to your github repo.
-7. If you had edit the code MFE/MFE/PyCosting_ARPA_E_MFE.ipynb in colab, then to save the new version of the code, and the updated version of the output cells from running it, then in colab do "File -> Save a copy in GitHub".
+7. If you edited the code MFE/MFE/PyCosting_ARPA_E_MFE.ipynb in colab, then to save the new version of the code, and the updated version of the output cells from running it, then in colab do "File -> Save a copy in GitHub".
 8. Go to your overleaf document, and in Menu, Sync, Github, do a 'Pull GitHub changes into Overleaf'.
 10. Process the 'Costing_ARPA-E_x_Modified'.tex file for the corresponding case to generate an updated pdf report.
 11. A report should have compiled with the placeholder variables replaced.
