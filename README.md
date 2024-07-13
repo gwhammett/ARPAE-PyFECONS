@@ -8,12 +8,12 @@ Caution: the upstream (original) repo was released as-is with no plans for suppo
 
 ### How to run this code:
 
-This Github repo contains a folder for each base case, and one for the benchmark cases. Each folder contains the main python costing code in a .ipynb file, the template text for each cost category in the 'Originals' folder, and other files required for the latex document to compile. To generate a report:
+This Github repo contains a folder for each base case (IFE, MFE, MIF), and one for the benchmark cases. Each folder contains the main python costing code in a .ipynb file, the template text for each cost category in the 'Originals' folder, and other files required for the latex document to compile. To generate a report:
 
-1. Initial setup only:  Fork your own copy of this github repo.  (Don't bother trying to create a branch, overleaf only works with a main branch.)
+1. Initial setup only:  Fork (or clone) your own copy of this github repo.  (Don't bother trying to create a branch, overleaf only works with a main branch.)
 2. Overleaf setup and usage:
     1. Initial setup only: Create an Overleaf.com document that is synced with your github fork of this repo.  (This can sometimes take a couple of minutes.)  To avoid possible confusion, make sure that in the Overleaf "Menu" (upper left corner), the Settings section says the "Main document" is the desired one (for me, MFE/Costing_ARPA-E_MFE_Modified.tex).
-    2. In Overleaf, there are folders for each costing case. Select one, inside there are 'Originals', 'Modified', 'Costing_ARPA-E_x_Modified.tex', 'Costing_ARPA-E_x_Originals.tex' and others. To compile a report from a past run of the code, compile 'Costing_ARPA-E_x_Modified.tex', which uses info in the Modified folder.
+    2. In Overleaf, there are folders for each costing case. Select one  Inside there are 'Originals', 'Modified', 'Costing_ARPA-E_x_Modified.tex', 'Costing_ARPA-E_x_Originals.tex' and others. To compile a report from a past run of the code, compile 'Costing_ARPA-E_x_Modified.tex', which uses info in the Modified folder.
     3. To see the template form of the report (before specific values are inserted for variables) compile 'Costing_ARPA-E_x_Originals.tex', which uses info in the Originals folder.
 3. Initial setup only:  Create a GitHub PAT for your github repo and put it in a file Colab-private/ARPAE-PyFECONS-PAT.txt in your google drive.  (A PAT is a Personal Access Token, essentially a long password.  Keep this PAT confidential, as it gives write access to your GitHub repo.  This will be used by the python costing code run in colab to write results back to github, where it will be read by overleaf.com to make the final pdf report.)
 4. Go to the main python notebook in the github subdirectory you are working on, like [MFE/PyCosting_ARPA_E_MFE.ipynb](MFE/PyCosting_ARPA_E_MFE.ipynb) <br> (I have focussed only on the MFE version so far), and click on the "Open in Colab" icon/link at the beginning to open it in https://colab.research.google.com. \
