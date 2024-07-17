@@ -2,11 +2,11 @@
 
 ### Background:
 
-This repo is a modified version of https://github.com/Woodruff-Scientific-Ltd/ARPAE-PyFECONS, which is an open source public release to document the general approach and data used in some fusion reactor costing projects by Woodruff Scientific Ltd funded by ARPA-E.  For a video talk describing the code, see:
+This repo is a modified version of https://github.com/Woodruff-Scientific-Ltd/ARPAE-PyFECONS, which is an open source public release to document the general methodology and data used in some fusion reactor costing projects by Woodruff Scientific Ltd funded by ARPA-E.  For a video talk describing the code, see:
 https://www.linkedin.com/posts/activity-7193175795689738241-4jxT/ 
 
-GWH: I've made changes only to files in the MFE folder.  These were minor changes to fix some latex errors that prevented making the final pdf report, minor changes to the python code to make it easier for a user to be able to set up their own cases and do runs with out affecting the main github repo, and a few other minor changes.
-Caution: the upstream (original) repo was released as-is with no plans for support, and there are known limitations and various levels of approximations in it that persist in this present forked version. You should not use this code for any serious work without understanding it and going through all of the code to set up the proper inputs for your case.  (Commercial versions of this software have a number of fixes and more detailed analysis relative to this open-source version.) Search https://github.com/gwhammett/ARPAE-PyFECONS/blob/main/MFE/PyCosting_ARPA_E_MFE.ipynb for "??" to find some of the known places that could use further work.
+GWH: I've made changes only to files in the MFE folder.  These were minor changes to the python code to make it easier for a user to be able to set up their own cases and do runs with out affecting the main github repo, and a few other minor changes (including fix some latex errors that prevented making the final pdf report). 
+Caution: the upstream (original) repo was released as-is with no plans for further modifications or support, and there are known limitations and various levels of approximations in it that persist in this present forked version and have not yet been improved. You should not use this code for any serious work without understanding it and going through all of the code to set up the proper inputs for a particular reactor design.  (Commercial versions of this software have a number of fixes and more detailed analysis relative to this open-source version.) Search https://github.com/gwhammett/ARPAE-PyFECONS/blob/main/MFE/PyCosting_ARPA_E_MFE.ipynb for "??" to find some of the known places that could use further work.
 
 ### How to run this code:
 
