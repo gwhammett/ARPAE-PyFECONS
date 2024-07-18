@@ -18,15 +18,16 @@ This Github repo contains a folder for each base case (IFE, MFE, MIF), and one f
     2. In Overleaf, there are folders for each costing case. Select one  Inside there are 'Originals', 'Modified', 'Costing_ARPA-E_x_Modified.tex', 'Costing_ARPA-E_x_Originals.tex' and others. To compile a report from a past run of the code, compile 'Costing_ARPA-E_x_Modified.tex', which uses info in the Modified folder.
     3. To see the template form of the report (before specific values are inserted for variables) compile 'Costing_ARPA-E_x_Originals.tex', which uses info in the Originals folder.
 3. Initial setup only:  Create a GitHub PAT for your github repo and put it in a file Colab-private/ARPAE-PyFECONS-PAT.txt in your google drive.  (A PAT is a Personal Access Token, essentially a long password.  Keep this PAT confidential, as it gives write access to your GitHub repo.  This will be used by the python costing code run in colab to write results back to github, where it will be read by overleaf.com to make the final pdf report.)
-4. Go to the main python notebook in the github subdirectory you are working on, like [MFE/PyCosting_ARPA_E_MFE.ipynb](MFE/PyCosting_ARPA_E_MFE.ipynb) <br> (I have focussed only on the MFE version so far), and click on the "Open in Colab" icon/link at the beginning to open it in https://colab.research.google.com. \
+(Alternatively, you can put the PAT in your Colab environment as a "secret", though that won't work if you use  your own Jupyter server.)
+5. Go to the main python notebook in the github subdirectory you are working on, like [MFE/PyCosting_ARPA_E_MFE.ipynb](MFE/PyCosting_ARPA_E_MFE.ipynb) <br> (I have focussed only on the MFE version so far), and click on the "Open in Colab" icon/link at the beginning to open it in https://colab.research.google.com. \
 (Alternatively, you can upload the code notebook .ipynb file from github to colab.  In google colab, go to file -> upload notebook -> Github, search for your repo using the url, and select a code from an MFE, IFE, etc. directory).) Currently, running from google colab is recommended. If you decide to run the code locally, git handling code and file locations may be different, depending on your OS and environment.
-5. Edit the first code cell of the .ipynb code to set some parameters which point to your github repo.
-6. Enter other inputs in the \*.ipynb code if desired (such as the parameters in various places in the code that describe the reactor design being costed) or just use the default values.
-7. In the colab menu, go to Runtime and select Run all cells. (Or if this is a repeat run, in colab do Runtime -> "Restart Ssession and run all".) This will do the costing calculations and overwrite all of the files in the 'Modified' subdirectory, by substituting values for variables in the 'Original' template *.tex files.  It will then push the results (the new versions in the 'Modified' subdirectory) back to your github repo.
-8. If you edited the \*.ipynb code in colab, then to save this file, in colab do "File -> Save a copy in GitHub".
-9. Go to your overleaf document, and in Menu, Sync, Github, do a 'Pull GitHub changes into Overleaf'.
-10. Recompile the corresponding tex file (Costing_ARPA-E_x_Modified.tex in this example) to generate an updated pdf report.
-11. To edit text in the final report,
+6. Edit the first code cell of the .ipynb code to set some parameters which point to your github repo.
+7. Enter other inputs in the \*.ipynb code if desired (such as the parameters in various places in the code that describe the reactor design being costed) or just use the default values.
+8. In the colab menu, go to Runtime and select Run all cells. (Or if this is a repeat run, in colab do Runtime -> "Restart Ssession and run all".) This will do the costing calculations and overwrite all of the files in the 'Modified' subdirectory, by substituting values for variables in the 'Original' template *.tex files.  It will then push the results (the new versions in the 'Modified' subdirectory) back to your github repo.
+9. If you edited the \*.ipynb code in colab, then to save this file, in colab do "File -> Save a copy in GitHub".
+10. Go to your overleaf document, and in Menu, Sync, Github, do a 'Pull GitHub changes into Overleaf'.
+11. Recompile the corresponding tex file (Costing_ARPA-E_x_Modified.tex in this example) to generate an updated pdf report.
+12. To edit text in the final report,
     1. In Overleaf, edit the 'Originals' .tex files corresponding to the cost category you would like to edit, in the case folder you are working on. (Edits made to files in the 'Modified' folder would be overwritten when the code is run.)
     2. In the Overleaf Menu, Sync, Github, and 'Push Overleaf changes to github' to save them.
     3. Rerun the MFE/PyCosting_ARPA_E_MFE.ipynb code (in colab do 'Runtime/Restart session and run all')) to generate new files in the Modified folder in the github repo.  Then redo steps 9-10 above.
